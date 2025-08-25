@@ -1,0 +1,20 @@
+server:
+  port: 8787
+spring:
+  application:
+    name: fibonacci-webflux
+  webflux:
+    netty:
+      worker-count: 400
+
+logging:
+  level:
+    com.example.fibonacci: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

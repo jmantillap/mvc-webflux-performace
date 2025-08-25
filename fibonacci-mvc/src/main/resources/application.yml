@@ -1,0 +1,22 @@
+server:
+  port: 8686
+  tomcat:
+    threads:
+      max: 400
+  #    min-spare: 10
+
+spring:
+  application:
+    name: fibonacci-mvc
+
+logging:
+  level:
+    com.example.fibonacci: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
