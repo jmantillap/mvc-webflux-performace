@@ -57,7 +57,7 @@
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Fibonacci Webflux Request">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Fibonacci Webflux Request" enabled="true">
           <stringProp name="HTTPSampler.domain">192.168.1.6</stringProp>
           <stringProp name="HTTPSampler.port">8787</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
